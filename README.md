@@ -11,3 +11,6 @@ This is the practice of Python C extensions.  It is Python3 that I am practicing
 
 ## 00-HelloWorld
 It is a general hello world practice.  One may start from here for the simplest Python C extension example.
+
+## 01-HeyMan
+It is a C extension practice who gets arguments passed from Python.  The heyman function will echo the passed name and the number.
