@@ -1,4 +1,4 @@
-# python-c-extension
+# Python C extension
 This is the practice of Python C extensions.  It is Python3 that I am practicing now!
 
 ## Files in each directory
