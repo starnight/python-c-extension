@@ -10,10 +10,12 @@ PyMethodDef helloworld_funcs[] = {
 	{	NULL}
 };
 
-struct PyModuleDef helloworld_mod = {
+char helloworldmod_docs[] = "This is hello world module.";
+
+PyModuleDef helloworld_mod = {
 	PyModuleDef_HEAD_INIT,
 	"helloworld",
-	"This is hello world module.",
+	helloworldmod_docs,
 	-1,
 	helloworld_funcs,
 	NULL,
