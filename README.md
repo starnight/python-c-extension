@@ -14,3 +14,6 @@ It is a general hello world practice.  One may start from here for the simplest 
 
 ## 01-HeyMan
 It is a C extension practice who gets arguments passed from Python.  The heyman function will echo the passed name and the number.
+
+## 02-Add
+It is an adding function which will not only gets arguments passed from Python, but also returns a tuple that is composite of the result and the equation string.
