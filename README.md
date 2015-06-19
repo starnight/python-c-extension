@@ -17,3 +17,6 @@ It is a C extension practice who gets arguments passed from Python.  The heyman 
 
 ## 02-Add
 It is an adding function which will not only gets arguments passed from Python, but also returns a tuple that is composite of the result and the equation string.
+
+## 03-CrossVersion
+It is a cross version example that shows how to port between Python 2 and Python 3.
