@@ -38,14 +38,14 @@ PyModuleDef helloworld_mod = {
 	NULL
 };
 
-void PyInit_helloworld(void) {
-	PyModule_Create(&helloworld_mod);
+PyMODINIT_FUNC PyInit_helloworld(void) {
+	return PyModule_Create(&helloworld_mod);
 }
 
 #else
 
-void inithelloworld(void) {
-	Py_InitModule3(helloworldmod_name, helloworld_funcs, helloworldmod_docs);
+PyMODINIT_FUNC inithelloworld(void) {
+	return Py_InitModule3(helloworldmod_name, helloworld_funcs, helloworldmod_docs);
 }
 
 #endif
