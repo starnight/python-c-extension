@@ -44,8 +44,8 @@ PyMODINIT_FUNC PyInit_helloworld(void) {
 
 #else
 
-PyMODINIT_FUNC inithelloworld(void) {
-	return Py_InitModule3(helloworldmod_name, helloworld_funcs, helloworldmod_docs);
+void inithelloworld(void) {
+	Py_InitModule3(helloworldmod_name, helloworld_funcs, helloworldmod_docs);
 }
 
 #endif
