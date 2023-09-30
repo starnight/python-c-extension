@@ -20,3 +20,36 @@ It is an adding function which will not only gets arguments passed from Python, 
 
 ## 03-CrossVersion
 It is a cross version example that shows how to port between Python 2 and Python 3.
+
+## Build and Run the example
+
+1. Run Python environment within a clean container, ex: Python in Alpine Linux
+
+```
+podman run -it --rm docker.io/library/python:3-alpine sh
+```
+
+2. Install development tools
+
+```
+apk add git make gcc musl-dev
+```
+
+3. Get and go into the Python C extension example
+
+```
+git clone https://github.com/starnight/python-c-extension
+cd python-c-extension/00-HelloWorld/
+```
+
+4. Compile the example
+
+```
+make
+```
+
+5. Run the example
+
+```
+python test.py
+```
